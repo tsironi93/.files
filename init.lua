@@ -1,5 +1,10 @@
 require("config.lazy")
 
+vim.opt.tabstop = 4       -- A tab is 4 spaces
+vim.opt.shiftwidth = 4    -- Indentation is 4 spaces
+vim.opt.expandtab = flase  -- Convert tabs to spaces
+vim.opt.softtabstop = 4   -- Makes backspace treat spaces as a tab
+
 function Insert42Header()
 	local filename = vim.fn.expand("%:t") -- Get the current file name
 	local user = os.getenv("USER") or "user"
