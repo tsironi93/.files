@@ -18,6 +18,18 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    {
+      "hardyrafael17/norminette42.nvim",
+      config = function()
+        local norminette = require("norminette")
+        norminette.setup({
+          runOnSave = true,
+          maxErrorsToShow = 5,
+          active = true,
+        })
+      end,
+    },
+
     -- import/override with your plugins
     { import = "plugins" },
   },
