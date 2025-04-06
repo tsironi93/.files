@@ -55,6 +55,7 @@ return {
     -- change some options
     opts = {
       defaults = {
+		file_ignore_patterns = {"%.o", "%.exe"},
         layout_strategy = "horizontal",
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
