@@ -25,7 +25,7 @@ require("lazy").setup({
         norminette.setup({
           runOnSave = true,
           maxErrorsToShow = 5,
-          active = true,
+          active = false,
         })
       end,
     },
